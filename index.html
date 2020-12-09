@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NewScrape: A News Scraper</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+		<div id="banner">
+			<img src="robotarm.jpg" />
+			<h1>NewScrape</h1>
+		</div>
+		<div id="content">
+			<p>
+				<button id="btnScrape">Scrape</button>
+				<button id="btnClear">Clear</button>
+			</p>
+			<h2>Articles</h2>
+			<img id="pleasewait" src="hammertime.gif" />
+			<div id="articles"></div>
+			<div id="commentForm">
+				<p>
+					<a href="javascript:;" id="btnCloseCommentForm">[X]</a>
+				</p>
+				<input type="text" id="note_article_id" />
+				<p>
+					Title:<br />
+					<input type="text" id="note_title" />
+				</p>
+				<p>
+					Comments:<br />
+					<textarea id="note_body"></textarea>
+				</p>
+				<p>
+					<button id="btnSubmitNote">Save</button>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+	<script src="app.js"></script>
+  </body>
+</html>
+
+
+
